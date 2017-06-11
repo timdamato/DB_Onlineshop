@@ -12,3 +12,6 @@ insert into Unterkategorie (KategorieID, Name, Status) values (4, "Firewall", "V
 insert into Unterkategorie (KategorieID, Name, Status) values (5, "Betriebssysteme", "Verfügbar");
 insert into Unterkategorie (KategorieID, Name, Status) values (5, "Büroanwendungen", "Verfügbar");
 insert into Unterkategorie (KategorieID, Name, Status) values (5, "Sicherheit", "Verfügbar");
+UPDATE "Unterkategorie"
+SET AktionID = Select AktionID from Aktion
+WHERE Name=Select ;
